@@ -1,8 +1,94 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Jost', system-ui, sans-serif;
+    background-color: #1a1611;
+    color: #f5ecda;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
 }
 
-main {
-  padding: 40px;
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #e9cd6a 0%, #c89a2a 50%, #a0742f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-bronze {
+    background: linear-gradient(135deg, #d9bd87 0%, #b8893f 50%, #825c25 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-gold-shimmer {
+    background: linear-gradient(
+      90deg,
+      #a0742f 0%,
+      #e9cd6a 25%,
+      #dcb03e 50%,
+      #e9cd6a 75%,
+      #a0742f 100%
+    );
+    background-size: 200% auto;
+  }
+
+  .border-gradient-gold {
+    border-image: linear-gradient(135deg, #e9cd6a, #b8893f, #e9cd6a) 1;
+  }
+
+  .shadow-gold-glow {
+    box-shadow: 0 0 30px rgba(201, 164, 99, 0.15), 0 0 60px rgba(201, 164, 99, 0.05);
+  }
+
+  .shadow-bronze-glow {
+    box-shadow: 0 0 40px rgba(184, 137, 63, 0.2), 0 0 80px rgba(184, 137, 63, 0.08);
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .perspective {
+    perspective: 1000px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1611;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #b8893f, #825c25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #c9a463, #a0742f);
+}
+
+/* Selection */
+::selection {
+  background: rgba(201, 164, 99, 0.3);
+  color: #f5ecda;
 }
