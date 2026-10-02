@@ -1,9 +1,9 @@
-import { restaurant } from '@/data';
+import { settings } from '@/settings';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLang } from '@/LanguageContext';
 
 export default function Impressum() {
-  const { lang, t } = useLang();
+  const { t } = useLang();
 
   return (
     <section id="impressum" className="relative py-24 md:py-32 overflow-hidden">
@@ -32,7 +32,7 @@ export default function Impressum() {
                 </div>
                 <div>
                   <div className="text-xs text-bronze-300/60 tracking-wider uppercase mb-1">{t.impressum.address}</div>
-                  <p className="text-bronze-100/80">{restaurant.address}</p>
+                  <p className="text-bronze-100/80">{settings.restaurant.address}</p>
                 </div>
               </div>
 
@@ -42,8 +42,8 @@ export default function Impressum() {
                 </div>
                 <div>
                   <div className="text-xs text-bronze-300/60 tracking-wider uppercase mb-1">{t.impressum.phone}</div>
-                  <a href={`tel:${restaurant.phone}`} className="text-bronze-100/80 hover:text-bronze-300 transition-colors">
-                    {restaurant.phone}
+                  <a href={`tel:${settings.restaurant.phone}`} className="text-bronze-100/80 hover:text-bronze-300 transition-colors">
+                    {settings.restaurant.phone}
                   </a>
                 </div>
               </div>
@@ -54,8 +54,8 @@ export default function Impressum() {
                 </div>
                 <div>
                   <div className="text-xs text-bronze-300/60 tracking-wider uppercase mb-1">{t.impressum.email}</div>
-                  <a href={`mailto:${restaurant.email}`} className="text-bronze-100/80 hover:text-bronze-300 transition-colors">
-                    {restaurant.email}
+                  <a href={`mailto:${settings.restaurant.email}`} className="text-bronze-100/80 hover:text-bronze-300 transition-colors">
+                    {settings.restaurant.email}
                   </a>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function Impressum() {
             <h3 className="font-serif text-2xl text-bronze-100 mb-6">{t.impressum.hours}</h3>
 
             <div className="space-y-3">
-              {restaurant.hours.map((h) => (
+              {settings.restaurant.openingHours.map((h) => (
                 <div key={h.day} className="flex items-center justify-between py-2 border-b border-bronze-400/10 last:border-0">
                   <div className="flex items-center gap-3">
                     <Clock className="w-4 h-4 text-bronze-300/50" strokeWidth={1.5} />
@@ -85,15 +85,15 @@ export default function Impressum() {
           <h3 className="font-serif text-xl text-bronze-200 mb-4">{t.impressum.legal}</h3>
           <div className="grid sm:grid-cols-2 gap-6 text-sm text-bronze-200/40 leading-relaxed">
             <div>
-              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.company}:</span> La Favola GmbH</p>
-              <p className="mb-2"><span className="text-bronze-300/70">USt-IdNr.:</span> DE 000 000 000</p>
-              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.director}:</span> Marco Esposito</p>
-              <p><span className="text-bronze-300/70">{t.impressum.register}:</span> HRB 123456</p>
+              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.company}:</span> {settings.impressum.company}</p>
+              <p className="mb-2"><span className="text-bronze-300/70">USt-IdNr.:</span> {settings.impressum.vatId}</p>
+              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.director}:</span> {settings.impressum.managingDirector}</p>
+              <p><span className="text-bronze-300/70">{t.impressum.register}:</span> {settings.impressum.commercialRegister}</p>
             </div>
             <div>
-              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.responsible}:</span> Marco Esposito</p>
-              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.authority}:</span> zuständige Aufsichtsbehörde</p>
-              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.dispute}:</span> Wir nehmen nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.</p>
+              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.responsible}:</span> {settings.impressum.responsibleForContent}</p>
+              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.authority}:</span> {settings.impressum.supervisoryAuthority}</p>
+              <p className="mb-2"><span className="text-bronze-300/70">{t.impressum.dispute}:</span> {settings.impressum.disputeResolution}</p>
             </div>
           </div>
         </div>

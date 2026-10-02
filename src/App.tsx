@@ -1,7 +1,8 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Story from '@/components/Story';
-import Menu from '@/components/Menu';
+import Gallery from '@/components/Gallery';
+import EventRequest from '@/components/EventRequest';
 import Events from '@/components/Events';
 import Impressum from '@/components/Impressum';
 import Footer from '@/components/Footer';
@@ -10,30 +11,23 @@ import { LanguageProvider } from '@/LanguageContext';
 export default function App() {
   return (
     <LanguageProvider>
-      <div className="relative min-h-screen text-bronze-100 overflow-x-hidden">
-        {/* Fixed background image */}
-        <div className="fixed inset-0 z-0">
-          <img
-            src="/images/LaFavola.jpeg"
-            alt=""
-            className="w-full h-full object-cover object-top"
-          />
-        </div>
-        {/* Dark overlay for readability */}
-        <div className="fixed inset-0 z-0 bg-charcoal-950/80" />
-
-        {/* Content */}
-        <div className="relative z-10">
-          <Navbar />
-          <main>
-            <Hero />
-            <Story />
-            <div id="order" />
-            <Menu />
-            <Events />
-            <Impressum />
-          </main>
-          <Footer />
+      <div
+        className="min-h-screen bg-[#172111] bg-no-repeat bg-[length:100%_100%] text-bronze-100 overflow-x-hidden"
+        style={{ backgroundImage: "url('/images/LaFavola.jpeg')" }}
+      >
+        <div className="min-h-screen bg-charcoal-950/75">
+          <div className="relative z-10">
+            <Navbar />
+            <main>
+              <Hero />
+              <Story />
+              <Gallery />
+              <EventRequest />
+              <Events />
+              <Impressum />
+            </main>
+            <Footer />
+          </div>
         </div>
       </div>
     </LanguageProvider>

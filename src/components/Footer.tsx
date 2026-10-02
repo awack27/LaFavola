@@ -1,5 +1,5 @@
 import { Flame, Instagram, Facebook, Twitter, Globe } from 'lucide-react';
-import { restaurant } from '@/data';
+import { settings } from '@/settings';
 import { useLang } from '@/LanguageContext';
 
 export default function Footer() {
@@ -25,12 +25,12 @@ export default function Footer() {
           </nav>
 
           <div className="flex items-center gap-4">
-            {restaurant.website && (
+            {settings.restaurant.website && (
               <a
-                href={`https://${restaurant.website}`}
+                href={`https://${settings.restaurant.website}`}
                 className="w-10 h-10 rounded-full border border-bronze-400/20 flex items-center justify-center text-bronze-300/60 hover:text-bronze-300 hover:border-bronze-400/50 hover:bg-bronze-400/10 transition-all duration-300"
-                aria-label={restaurant.website}
-                title={restaurant.website}
+                aria-label={settings.restaurant.website}
+                title={settings.restaurant.website}
               >
                 <Globe className="w-4 h-4" strokeWidth={1.5} />
               </a>
@@ -50,7 +50,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-bronze-400/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-bronze-200/30 tracking-wider">
-            &copy; {new Date().getFullYear()} {restaurant.name}. {t.footer.rights}
+            &copy; {new Date().getFullYear()} {settings.restaurant.name}. {t.footer.rights}
           </p>
           <p className="text-xs text-bronze-200/30 tracking-wider">
             {t.footer.crafted}

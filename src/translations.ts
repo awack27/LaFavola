@@ -5,10 +5,10 @@ export const translations = {
     nav: {
       home: 'Startseite',
       story: 'Unsere Geschichte',
-      menu: 'Speisekarte',
+      menu: 'Galerie',
       events: 'Vergangene Events',
       impressum: 'Impressum',
-      order: 'Jetzt bestellen',
+      order: 'Event anfragen',
     },
     hero: {
       since: 'Seit 2026',
@@ -32,9 +32,9 @@ export const translations = {
       heat: 'Ofenhitze',
     },
     menu: {
-      eyebrow: 'Unsere Speisekarte',
-      title: 'Pizza mit Charakter',
-      description: 'Jede Pizza wird von Hand geformt und im heißen Ofen gebacken. Wählen Sie Ihre Favoriten und stellen Sie Ihre Bestellung zusammen.',
+      eyebrow: 'Unsere Galerie',
+      title: 'Momente von La Favola',
+      description: 'Einblicke in unsere Pizza, unser Handwerk und die Events, die wir mit Leidenschaft begleiten.',
       all: 'Alle',
       classic: 'Klassiker',
       specialty: 'Spezialitäten',
@@ -51,6 +51,20 @@ export const translations = {
       place: 'Bestellung aufgeben',
       placed: 'Bestellung erhalten!',
       placedText: 'Ihre Pizzen werden mit Liebe zubereitet. Wir melden uns in Kürze bei Ihnen.',
+    },
+    request: {
+      eyebrow: 'Event anfragen',
+      title: 'Ihr Event. Unsere Pizza.',
+      description: 'La Favola ist ausschließlich für Events und Catering da. Senden Sie uns Ihre Anfrage – wir melden uns persönlich bei Ihnen.',
+      firstName: 'Vorname',
+      lastName: 'Nachname',
+      email: 'E-Mail-Adresse',
+      people: 'Personenanzahl',
+      message: 'Ihre Anfrage',
+      messagePlaceholder: 'Erzählen Sie uns von Ihrem Event, dem Datum und Ihren Wünschen …',
+      submit: 'Anfrage per E-Mail senden',
+      required: 'Bitte füllen Sie alle Pflichtfelder aus.',
+      mailNote: 'Ihre Anfrage wird in Ihrem E-Mail-Programm geöffnet. Ihre E-Mail-Adresse wird automatisch in CC eingetragen.',
     },
     events: {
       eyebrow: 'Vergangene Events',
@@ -77,7 +91,7 @@ export const translations = {
     },
     footer: {
       story: 'Geschichte',
-      menu: 'Speisekarte',
+      menu: 'Galerie',
       events: 'Events',
       crafted: 'Mit Leidenschaft in Deutschland gebacken.',
       rights: 'Alle Rechte vorbehalten.',
@@ -88,10 +102,10 @@ export const translations = {
     nav: {
       home: 'Home',
       story: 'Our Story',
-      menu: 'Menu',
+      menu: 'Gallery',
       events: 'Previous Events',
       impressum: 'Impressum',
-      order: 'Order Now',
+      order: 'Request an event',
     },
     hero: {
       since: 'Since 2026',
@@ -115,9 +129,9 @@ export const translations = {
       heat: 'Oven heat',
     },
     menu: {
-      eyebrow: 'Our Menu',
-      title: 'Pizza with character',
-      description: 'Every pizza is hand-stretched and fired in our hot oven. Choose your favorites and build your order.',
+      eyebrow: 'Our Gallery',
+      title: 'Moments at La Favola',
+      description: 'A glimpse into our pizza, our craft, and the events we cater with passion.',
       all: 'All',
       classic: 'Classics',
       specialty: 'Specialty',
@@ -134,6 +148,20 @@ export const translations = {
       place: 'Place Order',
       placed: 'Order received!',
       placedText: 'Your pizzas are being prepared with love. We will be in touch shortly.',
+    },
+    request: {
+      eyebrow: 'Request an event',
+      title: 'Your event. Our pizza.',
+      description: 'La Favola is exclusively available for events and catering. Send us your request and we will get back to you personally.',
+      firstName: 'First name',
+      lastName: 'Last name',
+      email: 'Email address',
+      people: 'Number of guests',
+      message: 'Your request',
+      messagePlaceholder: 'Tell us about your event, date, and wishes …',
+      submit: 'Send request by email',
+      required: 'Please complete all required fields.',
+      mailNote: 'Your request will open in your email program. Your email address will automatically be added in CC.',
     },
     events: {
       eyebrow: 'Previous Events',
@@ -160,7 +188,7 @@ export const translations = {
     },
     footer: {
       story: 'Story',
-      menu: 'Menu',
+      menu: 'Gallery',
       events: 'Events',
       crafted: 'Made with passion in Germany.',
       rights: 'All rights reserved.',
@@ -169,7 +197,7 @@ export const translations = {
   },
 } as const;
 
-export type Copy = typeof translations.de;
+export type Copy = (typeof translations)[Language];
 
 export const menuCopy = {
   de: {
