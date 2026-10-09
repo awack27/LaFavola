@@ -14,7 +14,7 @@ export const settings = {
     ],
   },
   impressum: {
-    company: 'La Favola GmbH',
+    company: 'La Favola',
     vatId: 'DE 000 000 000',
     managingDirector: 'Marco Esposito',
     commercialRegister: 'HRB 123456',
