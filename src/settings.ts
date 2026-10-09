@@ -6,6 +6,9 @@ export const settings = {
     website: 'www.lafavolajs.de',
     address: 'Eisenbahnstraße 32 A, 93049 Regensburg, Deutschland',
     instagram: '@lafavola.js',
+    openingHours: [
+      { day: 'Montag - Sonntag', time: 'nach Absprache' },
+    ],
   },
   impressum: {
     company: 'Stadler Corfariu UG (haftungsbeschränkt)',
