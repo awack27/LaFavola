@@ -1,0 +1,11 @@
+{
+  "title": "Unsere Zutaten",
+  "description": "Ehrliche Zutaten, sorgfältig ausgewählt und mit Respekt vor dem Handwerk verarbeitet.",
+  "imageFolder": "/Settings/Ingredients/images",
+  "items": [
+    { "id": "flour", "title": "Mehl", "description": "Feines Tipo-00-Mehl für einen elastischen, aromatischen Teig.", "image": "https://images.pexels.com/photos/5903541/pexels-photo-5903541.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { "id": "tomatoes", "title": "Tomaten", "description": "Sonnengereifte San-Marzano-Tomaten mit natürlicher Süße.", "image": "https://images.pexels.com/photos/29609013/pexels-photo-29609013.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { "id": "mozzarella", "title": "Mozzarella", "description": "Cremiger Fior di Latte, der im Ofen goldgelb schmilzt.", "image": "https://images.pexels.com/photos/35760006/pexels-photo-35760006.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { "id": "olive-oil", "title": "Olivenöl", "description": "Natives Olivenöl extra als duftender Abschluss jeder Pizza.", "image": "https://images.pexels.com/photos/313715/pexels-photo-313715.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" }
+  ]
+}

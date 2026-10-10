@@ -1,0 +1,36 @@
+{
+  "title": "Vergangene Events",
+  "description": "Ein Rückblick auf unsere gemeinsamen Genussmomente, Tastings und Feiern.",
+  "imageFolder": "/Settings/PreviousEvents/images",
+  "galleryFolder": "/Settings/PreviousEvents/images",
+  "items": [
+    {
+      "id": "pizza-night",
+      "title": "Pizza-Workshop",
+      "date": "15. März 2026",
+      "description": "Lernen Sie die Kunst des neapolitanischen Teigs in unserem Workshop mit Menü und Weinbegleitung.",
+      "image": "https://images.pexels.com/photos/5056624/pexels-photo-5056624.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "id": "wine-pairing",
+      "title": "Weinabend aus Kampanien",
+      "date": "2. April 2026",
+      "description": "Eine kulinarische Reise durch Kampaniens Weine, begleitet von exklusiven Pizzen.",
+      "image": "https://images.pexels.com/photos/313715/pexels-photo-313715.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "id": "harvest-festival",
+      "title": "Tomaten-Erntefest",
+      "date": "20. August 2026",
+      "description": "Wir feiern die San-Marzano-Ernte mit Livemusik und den ersten Tomaten der Saison.",
+      "image": "https://images.pexels.com/photos/8856555/pexels-photo-8856555.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "id": "anniversary",
+      "title": "Jubiläumsgala von La Favola",
+      "date": "12. Oktober 2026",
+      "description": "Ein eleganter Abend mit Empfang, Livemusik und einem besonderen Acht-Gänge-Menü.",
+      "image": "https://images.pexels.com/photos/17001772/pexels-photo-17001772.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  ]
+}

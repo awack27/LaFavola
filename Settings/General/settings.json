@@ -1,0 +1,14 @@
+{
+  "name": "La Favola",
+  "email": "info@lafavolajs.de",
+  "phone": "+49 000 000000",
+  "website": "www.lafavolajs.de",
+  "address": "Deutschland",
+  "instagram": "@lafavola.js",
+  "openingHours": [
+    { "day": "Montag", "time": "Geschlossen" },
+    { "day": "Dienstag – Donnerstag", "time": "12:00 – 22:30" },
+    { "day": "Freitag – Samstag", "time": "12:00 – 23:30" },
+    { "day": "Sonntag", "time": "12:00 – 22:00" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Ihr Event. Unsere Pizza.",
+  "companyEmail": "info@lafavolajs.de",
+  "confirmationSubject": "Ihre Anfrage bei La Favola",
+  "eventOptions": [
+    "Hochzeit",
+    "Geburtstag",
+    "Firmenevent",
+    "Do-it-yourself-Workshop",
+    "Sonstiges"
+  ]
+}

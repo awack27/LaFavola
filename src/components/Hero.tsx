@@ -43,7 +43,7 @@ export default function Hero() {
               href="#order"
               className="group relative px-10 py-4 overflow-hidden rounded-full bg-gradient-to-r from-bronze-400 via-gold-400 to-bronze-500 text-charcoal-950 font-medium tracking-wider uppercase text-sm transition-all duration-500 hover:shadow-bronze-glow hover:scale-105"
             >
-              <span className="relative z-10">{t.hero.order}</span>
+              <span className="relative z-10">{t.hero.request}</span>
               <div className="absolute inset-0 bg-gradient-to-r from-gold-300 via-bronze-300 to-gold-300 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </a>
             <a

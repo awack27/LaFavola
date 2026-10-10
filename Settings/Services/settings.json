@@ -1,0 +1,34 @@
+{
+  "title": "Unsere Leistungen",
+  "imageFolder": "/Settings/Services/images",
+  "items": [
+    {
+      "id": "wedding",
+      "title": "Hochzeiten",
+      "requestEvent": "Hochzeit",
+      "description": "Pizza Napoletana, stilvolles Catering und ein unvergesslicher Genussmoment für Ihren großen Tag.",
+      "image": "https://images.pexels.com/photos/8856555/pexels-photo-8856555.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "id": "birthday",
+      "title": "Geburtstage",
+      "requestEvent": "Geburtstag",
+      "description": "Von der kleinen Feier bis zum großen Fest: Wir bringen heiße Pizza und italienische Lebensfreude zu Ihnen.",
+      "image": "https://images.pexels.com/photos/32502363/pexels-photo-32502363.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "id": "corporate",
+      "title": "Firmenevents",
+      "requestEvent": "Firmenevent",
+      "description": "Besondere Teambuilding-Momente, Business-Catering und eine entspannte Atmosphäre für Ihr Unternehmen.",
+      "image": "https://images.pexels.com/photos/17001772/pexels-photo-17001772.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    },
+    {
+      "id": "workshop",
+      "title": "Do-it-yourself-Workshop",
+      "requestEvent": "Do-it-yourself-Workshop",
+      "description": "Gemeinsam Teig formen, belegen und backen: unser interaktiver Pizza-Workshop für Gruppen und Teams.",
+      "image": "https://images.pexels.com/photos/5056624/pexels-photo-5056624.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  ]
+}
